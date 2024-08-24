@@ -7,6 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:pie_chart/pie_chart.dart';
 
+import '../models/world_state_model.dart';
+import '../services/state_services.dart';
+import 'country_list.dart';
+
 class WorldStatesScreen extends StatefulWidget {
   const WorldStatesScreen({super.key});
 
@@ -184,63 +188,6 @@ class _WorldStatesScreenState extends State<WorldStatesScreen>
                   }
                 },
               ),
-              // const PieChart(
-              //   dataMap: {"total": 20, "Recovered": 15, "Death": 5},
-              //   animationDuration: Duration(microseconds: 1120),
-              //   chartType: ChartType.ring,
-              //   colorList: [
-              //     Color(0xff4285f4),
-              //     Color(0xff1aa260),
-              //     Color(0xffde5246)
-              //   ],
-              //   chartRadius: 160,
-              //   ringStrokeWidth: 25,
-              //   legendOptions:
-              //       LegendOptions(legendPosition: LegendPosition.left),
-              // ),
-              // SizedBox(
-              //   height: MediaQuery.of(context).size.height * 0.06,
-              // ),
-              // ReusableRow(
-              //   title: "total",
-              //   value: "200",
-              //   fsize: 18,
-              //   clr: Colors.black,
-              // ),
-              // ReusableRow(
-              //     title: "Recovered",
-              //     value: "150",
-              //     fsize: 18,
-              //     clr: Colors.black),
-              // ReusableRow(
-              //   title: "Death",
-              //   value: "50",
-              //   fsize: 18,
-              //   clr: Colors.black,
-              // ),
-              // SizedBox(
-              //   height: MediaQuery.of(context).size.height * 0.06,
-              // ),
-              // GestureDetector(
-              //   child: Container(
-              //     height: 60,
-              //     width: MediaQuery.of(context).size.width * 0.7,
-              //     decoration: BoxDecoration(
-              //         borderRadius: BorderRadius.circular(11),
-              //         color: Colors.purple),
-              //     child: Center(
-              //       child: loading
-              //           ? const CircularProgressIndicator(
-              //               color: Colors.white,
-              //               strokeWidth: 4,
-              //             )
-              //           : const Text(
-              //               "Track Countries",
-              //               style: TextStyle(color: Colors.white, fontSize: 22),
-              //             ),
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
