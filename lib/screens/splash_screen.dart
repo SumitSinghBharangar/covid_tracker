@@ -1,6 +1,7 @@
 import 'dart:async';
 
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
@@ -31,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen>
     Timer(const Duration(milliseconds: 3200), () {
       Navigator.pushReplacement(
           context,
-          MaterialPageRoute(
+          CupertinoPageRoute(
             builder: (context) => const WorldStatesScreen(),
           ));
     });

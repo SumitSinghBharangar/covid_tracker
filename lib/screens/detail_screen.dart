@@ -1,10 +1,8 @@
 // ignore_for_file: must_be_immutable
 
-
 import 'package:flutter/material.dart';
 
 import 'world_states_screen.dart';
-
 
 class DetailScreen extends StatefulWidget {
   String name;

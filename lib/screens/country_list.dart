@@ -1,4 +1,4 @@
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -102,7 +102,7 @@ class _CountrylistScreenState extends State<CountrylistScreen> {
                                     onTap: () {
                                       Navigator.push(
                                           context,
-                                          MaterialPageRoute(
+                                          CupertinoPageRoute(
                                             builder: (context) => DetailScreen(
                                               name: snapshot.data![index]
                                                   ["country"],
@@ -156,7 +156,7 @@ class _CountrylistScreenState extends State<CountrylistScreen> {
                                     onTap: () {
                                       Navigator.push(
                                           context,
-                                          MaterialPageRoute(
+                                          CupertinoPageRoute(
                                             builder: (context) => DetailScreen(
                                               name: snapshot.data![index]
                                                   ["country"],
